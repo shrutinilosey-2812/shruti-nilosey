@@ -1,6 +1,6 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import { About, Work, Projects, Contact } from "@/components/Sections";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import Sections from "../components/Sections";
 
 export default function Page() {
   return (
