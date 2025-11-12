@@ -1,5 +1,5 @@
 "use client";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig } from "../lib/siteConfig";
 
 export default function Navbar() {
   const items = [
