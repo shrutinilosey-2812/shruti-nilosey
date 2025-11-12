@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig } from "../lib/siteConfig";
 
 export default function Hero() {
   return (
