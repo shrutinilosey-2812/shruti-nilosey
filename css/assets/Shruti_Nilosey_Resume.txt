@@ -1,0 +1,4 @@
+This is a placeholder file. Replace this with your actual resume named:
+Shruti_Nilosey_Resume.pdf
+
+Upload the PDF to assets/ so the Resume button downloads your real resume.
