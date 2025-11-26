@@ -4,97 +4,131 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Shruti Nilosey — QA Test Engineer</title>
+  <meta name="description" content="Shruti Nilosey — QA & Test Engineer. Selenium, Playwright, Appium, API testing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <meta name="description" content="Portfolio of Shruti Nilosey — QA & Test Engineer. Selenium, Playwright, Appium, API testing.">
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <div class="brand">Shruti Nilosey</div>
-      <nav class="menu">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">Shruti Nilosey</a>
+      <nav class="nav">
         <a href="#about">About</a>
         <a href="#work">Work</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="cta">Contact</a>
       </nav>
+
+      <button id="nav-toggle" aria-label="menu" class="nav-toggle">☰</button>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container">
-        <h1>Hi — I'm <span class="accent">Shruti Nilosey</span></h1>
-        <p class="lead">QA - Test Engineer · Professional</p>
-        <p class="intro">Professional QA/Test Engineer with proven experience in manual and automated testing for web and mobile applications. Skilled with Selenium, Playwright, Appium and API testing.</p>
-        <p class="cta-row">
-          <a class="btn" href="#projects">View Projects</a>
-          <a class="btn ghost" href="assets/Shruti_Nilosey_Resume.pdf" download>Download Resume</a>
-        </p>
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <h1 class="hero-title">Hi — I'm <span class="grad-text">Shruti Nilosey</span></h1>
+          <p class="hero-sub">QA · Test Engineer — Manual & Automation (Selenium, Playwright, Appium)</p>
+          <p class="lead">Professional QA/Test Engineer with 5+ years’ experience building stable E2E frameworks, improving release confidence and integrating tests into CI pipelines.</p>
+
+          <p class="hero-ctas">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="assets/Shruti_Nilosey_Resume.pdf" download>Download Resume</a>
+          </p>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <div class="card-visual">
+            <!-- soft gradient card (replace with avatar later if you want) -->
+            <div class="avatar-circle">SN</div>
+            <div class="card-meta">
+              <div class="name">Shruti Nilosey</div>
+              <div class="role">QA • Test Engineer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-shape" aria-hidden="true"></div>
+    </section>
+
+    <section id="about" class="wrap section card-section">
+      <div class="grid-2">
+        <div>
+          <h2>About</h2>
+          <p>Professional QA/Test Engineer with experience across web and mobile. I deliver automation suites (Selenium, Playwright, Appium), API tests, CI integrations and reports that reduce release risk and increase confidence for teams shipping frequently.</p>
+          <ul class="info-list">
+            <li><strong>Email:</strong> <a href="mailto:shruti.nilosey2812@gmail.com">shruti.nilosey2812@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shrutinilosey94/" target="_blank" rel="noopener">shrutilinosey94</a></li>
+            <li><strong>Location:</strong> Bangalore, India</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Skills & Tools</h3>
+          <p class="muted">Selenium · Playwright · Appium · Postman · TestNG · Java · TypeScript · GitHub Actions · Jenkins · Allure</p>
+          <div class="skill-grid">
+            <span>✅ Selenium</span><span>✅ Playwright</span><span>✅ Appium</span><span>✅ API Testing</span>
+            <span>✅ TestNG / Jest</span><span>✅ GitHub Actions</span><span>✅ Allure Reporting</span><span>✅ SAP Test Concepts</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="container section card">
-      <h2>About</h2>
-      <p>Professional QA/Test Engineer with 5+ years' experience delivering test automation and manual testing for enterprise web and mobile applications. I build stable E2E frameworks, integrate tests into CI pipelines and improve release confidence with meaningful reports and monitoring.</p>
-      <ul class="meta-list">
-        <li><strong>Email:</strong> <a href="mailto:shruti.nilosey2812@gmail.com">shruti.nilosey2812@gmail.com</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shrutinilosey94/">shrutilinosey94</a></li>
-        <li><strong>Location:</strong> Bangalore, India</li>
-      </ul>
-    </section>
-
-    <section id="work" class="container section">
+    <section id="work" class="wrap section">
       <h2>Work</h2>
-      <ul class="cards">
-        <li class="card">
+      <div class="cards">
+        <article class="card">
           <h3>Lead Consultant — ITC Infotech</h3>
           <p class="meta">Dec 2020 — Present · Bangalore</p>
-          <p>Leading testing activities with automation frameworks and release coordination for enterprise clients.</p>
-        </li>
-        <li class="card">
+          <p>Lead automation and release testing for enterprise clients; introduced cross-browser Playwright suites and stabilized flaky tests.</p>
+        </article>
+        <article class="card">
           <h3>Automation Tester — IVY Mobile</h3>
           <p class="meta">Mobile automation · Appium & BrowserStack</p>
-        </li>
-        <li class="card">
-          <h3>Team Lead — SAP SuccessFactors projects</h3>
+        </article>
+        <article class="card">
+          <h3>Team Lead — SAP SuccessFactors</h3>
           <p class="meta">Testing & release management</p>
-        </li>
-      </ul>
-    </section>
-
-    <section id="projects" class="container section card">
-      <h2>Projects</h2>
-      <p class="muted">Project samples will be added soon. For now, sample templates for Selenium, Playwright and API testing are available on request.</p>
-      <div class="projects-grid">
-        <article class="project">
-          <h3>Coming Soon — Selenium E2E</h3>
-          <p>Enterprise-grade Selenium project (Java + TestNG + POM) — downloadable after you approve test apps.</p>
-        </article>
-        <article class="project">
-          <h3>Coming Soon — Playwright Tests</h3>
-          <p>Modern Playwright test examples with CI integration and reports.</p>
-        </article>
-        <article class="project">
-          <h3>Coming Soon — API Tests</h3>
-          <p>Postman + Newman collections for API smoke and regression testing.</p>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="container section card">
+    <section id="projects" class="wrap section card-section">
+      <h2>Projects</h2>
+      <p class="muted">Project samples will be added soon — downloadable test samples (Selenium, Playwright, Postman) available on request.</p>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Selenium E2E (coming)</h3>
+          <p>Java + TestNG + POM — cross-browser regression suite.</p>
+        </div>
+        <div class="project-card">
+          <h3>Playwright Tests (coming)</h3>
+          <p>Modern Playwright suites with screenshots & HTML reports.</p>
+        </div>
+        <div class="project-card">
+          <h3>API Collections (coming)</h3>
+          <p>Postman + Newman CI pipelines validating key APIs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap section">
       <h2>Contact</h2>
-      <p>If you'd like to discuss a role or freelance engagement, please email: <a href="mailto:shruti.nilosey2812@gmail.com">shruti.nilosey2812@gmail.com</a></p>
+      <p>If you'd like to discuss a role or freelance work — email me at <a href="mailto:shruti.nilosey2812@gmail.com">shruti.nilosey2812@gmail.com</a>.</p>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <small>© <span id="year"></span> Shruti Nilosey — QA Test Engineer</small>
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="ft-year"></span> Shruti Nilosey — QA Test Engineer</small>
     </div>
   </footer>
 
-<script>
-document.getElementById('year').innerText = new Date().getFullYear();
-</script>
+  <script src="css/scripts.js"></script>
+  <script>
+    document.getElementById('ft-year').innerText = new Date().getFullYear();
+  </script>
 </body>
 </html>
