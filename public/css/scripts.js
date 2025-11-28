@@ -1,38 +1,36 @@
-// public/js/scripts.js
-// Simple command palette open/close + keyboard shortcut (Cmd/Ctrl+K)
-(function(){
-  function bySel(s){ return document.querySelector(s); }
-  const overlay = document.createElement('div');
-  overlay.className = 'cmd-palette-overlay';
-  overlay.innerHTML = `
-    <div class="cmd-palette" role="dialog" aria-modal="true">
-      <div class="search">
-        <input type="search" placeholder="Type to search commands or jump to project..." aria-label="Search"/>
-        <div class="kbd">Esc</div>
-      </div>
-      <div class="cmd-list">
-        <div class="cmd-item"><div>Open Projects</div><div class="kbd">Enter</div></div>
-        <div class="cmd-item"><div>Download Resume</div><div class="kbd">D</div></div>
-        <div class="cmd-item"><div>Contact / Email</div><div class="kbd">E</div></div>
-      </div>
-    </div>
-  `;
-  document.body.appendChild(overlay);
+// scripts.js - tiny command palette toggle and keyboard shortcut (Cmd/Ctrl+K)
+document.addEventListener('DOMContentLoaded', () => {
+  const palette = document.getElementById('command-palette');
+  const bar = document.getElementById('command-bar');
 
-  const bar = document.createElement('div');
-  bar.className = 'cmd-bar';
-  bar.innerHTML = `<div class="bar"><div class="hint"><span class="short">⌘K</span> Quick commands</div><div class="hint">Press to open</div></div>`;
-  document.body.appendChild(bar);
+  function openPalette(){
+    if(!palette) return;
+    palette.style.display = 'block';
+    setTimeout(()=> palette.classList.add('open'),10);
+    // focus first input if present
+    const input = palette.querySelector('input');
+    if(input) input.focus();
+  }
+  function closePalette(){
+    if(!palette) return;
+    palette.classList.remove('open');
+    setTimeout(()=> palette.style.display='none',220);
+  }
 
-  function openPalette(){ overlay.style.display = 'flex'; overlay.querySelector('input').focus(); }
-  function closePalette(){ overlay.style.display = 'none'; }
+  // toggle if user clicks the bar
+  if(bar) bar.addEventListener('click', ()=> openPalette());
 
-  bar.addEventListener('click', openPalette);
-  overlay.addEventListener('click', (e)=>{
-    if (e.target === overlay) closePalette();
+  // keyboard shortcut: Ctrl/Cmd + K
+  window.addEventListener('keydown', (e) => {
+    const keyK = e.key.toLowerCase() === 'k';
+    if ( (e.ctrlKey || e.metaKey) && keyK ){
+      e.preventDefault();
+      openPalette();
+    }
+    if(e.key === 'Escape') closePalette();
   });
-  document.addEventListener('keydown', (e)=>{
-    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase()==='k') { e.preventDefault(); openPalette(); }
-    if (e.key === 'Escape') closePalette();
-  });
-})();
+
+  // clicking outside closes palette
+  const overlay = document.getElementById('palette-overlay');
+  if(overlay) overlay.addEventListener('click', closePalette);
+});
