@@ -3,132 +3,137 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shruti Nilosey — QA Test Engineer</title>
-  <meta name="description" content="Shruti Nilosey — QA & Test Engineer. Selenium, Playwright, Appium, API testing.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <title>Shruti Nilosey — QA Engineer</title>
+  <meta name="description" content="Shruti Nilosey — QA Engineer (Manual & Automation). Portfolio and projects." />
+  <!-- Point to css/styles.css (place this file at public/css/styles.css) -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/">Shruti Nilosey</a>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact" class="cta">Contact</a>
-      </nav>
-
-      <button id="nav-toggle" aria-label="menu" class="nav-toggle">☰</button>
-    </div>
-  </header>
-
   <main>
-    <section class="hero">
-      <div class="wrap hero-inner">
-        <div class="hero-copy">
-          <h1 class="hero-title">Hi — I'm <span class="grad-text">Shruti Nilosey</span></h1>
-          <p class="hero-sub">QA · Test Engineer — Manual & Automation (Selenium, Playwright, Appium)</p>
-          <p class="lead">Professional QA/Test Engineer with 5+ years’ experience building stable E2E frameworks, improving release confidence and integrating tests into CI pipelines.</p>
 
-          <p class="hero-ctas">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn ghost" href="assets/Shruti_Nilosey_Resume.pdf" download>Download Resume</a>
-          </p>
-        </div>
+    <!-- HEADER -->
+    <header class="container header" role="banner">
+      <div class="header-left">
+        <h1 class="header-title">Shruti Nilosey</h1>
+        <div class="header-sub">QA Engineer · Automation & Manual Testing</div>
 
-        <div class="hero-card" aria-hidden="true">
-          <div class="card-visual">
-            <!-- soft gradient card (replace with avatar later if you want) -->
-            <div class="avatar-circle">SN</div>
-            <div class="card-meta">
-              <div class="name">Shruti Nilosey</div>
-              <div class="role">QA • Test Engineer</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-shape" aria-hidden="true"></div>
-    </section>
+        <div style="margin-top:14px;">
+          <a class="btn btn--a" href="#projects" title="Projects">
+            <span class="icon">📁</span>
+            Projects
+          </a>
 
-    <section id="about" class="wrap section card-section">
-      <div class="grid-2">
-        <div>
-          <h2>About</h2>
-          <p>Professional QA/Test Engineer with experience across web and mobile. I deliver automation suites (Selenium, Playwright, Appium), API tests, CI integrations and reports that reduce release risk and increase confidence for teams shipping frequently.</p>
-          <ul class="info-list">
-            <li><strong>Email:</strong> <a href="mailto:shruti.nilosey2812@gmail.com">shruti.nilosey2812@gmail.com</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shrutinilosey94/" target="_blank" rel="noopener">shrutilinosey94</a></li>
-            <li><strong>Location:</strong> Bangalore, India</li>
-          </ul>
-        </div>
+          <a class="btn btn--b" href="/Shruti_Nilosey_Resume.pdf" download title="Download resume">
+            <span class="icon">⬇️</span>
+            Resume
+          </a>
 
-        <div>
-          <h3>Skills & Tools</h3>
-          <p class="muted">Selenium · Playwright · Appium · Postman · TestNG · Java · TypeScript · GitHub Actions · Jenkins · Allure</p>
-          <div class="skill-grid">
-            <span>✅ Selenium</span><span>✅ Playwright</span><span>✅ Appium</span><span>✅ API Testing</span>
-            <span>✅ TestNG / Jest</span><span>✅ GitHub Actions</span><span>✅ Allure Reporting</span><span>✅ SAP Test Concepts</span>
-          </div>
+          <a class="btn btn--a" href="mailto:shruti.nilosey2812@gmail.com" style="margin-left:8px;" title="Email">
+            <span class="icon">✉️</span>
+            Email
+          </a>
         </div>
       </div>
-    </section>
 
-    <section id="work" class="wrap section">
-      <h2>Work</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Lead Consultant — ITC Infotech</h3>
-          <p class="meta">Dec 2020 — Present · Bangalore</p>
-          <p>Lead automation and release testing for enterprise clients; introduced cross-browser Playwright suites and stabilized flaky tests.</p>
-        </article>
-        <article class="card">
-          <h3>Automation Tester — IVY Mobile</h3>
-          <p class="meta">Mobile automation · Appium & BrowserStack</p>
-        </article>
-        <article class="card">
-          <h3>Team Lead — SAP SuccessFactors</h3>
-          <p class="meta">Testing & release management</p>
-        </article>
+      <div>
+        <!-- Profile image placeholder. Replace src with your uploaded photo path -->
+        <img id="profile-img" class="profile-photo" src="css/assets/avatar-placeholder.png" alt="Shruti Nilosey">
       </div>
-    </section>
+    </header>
 
-    <section id="projects" class="wrap section card-section">
-      <h2>Projects</h2>
-      <p class="muted">Project samples will be added soon — downloadable test samples (Selenium, Playwright, Postman) available on request.</p>
+    <div class="container spacer"></div>
 
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Selenium E2E (coming)</h3>
-          <p>Java + TestNG + POM — cross-browser regression suite.</p>
-        </div>
-        <div class="project-card">
-          <h3>Playwright Tests (coming)</h3>
-          <p>Modern Playwright suites with screenshots & HTML reports.</p>
-        </div>
-        <div class="project-card">
-          <h3>API Collections (coming)</h3>
-          <p>Postman + Newman CI pipelines validating key APIs.</p>
+    <!-- PROJECTS CARD -->
+    <section class="container card" id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" style="margin-bottom:10px;">Projects</h2>
+
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <!-- use data-target to reference an anchor or modal id -->
+        <button class="btn btn--a project-btn" data-target="proj-testproject">TestProject Login</button>
+        <button class="btn btn--b project-btn" data-target="proj-playwright">Playwright TestSuite</button>
+        <button class="btn btn--a project-btn" data-target="proj-selenium">Selenium Cases</button>
+      </div>
+
+      <div style="margin-top:18px;">
+        <h3>Core Skills</h3>
+        <div style="margin-top:8px;">
+          <span class="tag">Automation</span>
+          <span class="tag">Manual Testing</span>
+          <span class="tag">Playwright</span>
+          <span class="tag">Selenium</span>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="wrap section">
-      <h2>Contact</h2>
-      <p>If you'd like to discuss a role or freelance work — email me at <a href="mailto:shruti.nilosey2812@gmail.com">shruti.nilosey2812@gmail.com</a>.</p>
+    <div class="container spacer"></div>
+
+    <!-- EXPERIENCE / ABOUT -->
+    <section class="container" id="about">
+      <h2>About</h2>
+      <p style="max-width:900px; color:#34414c; margin-top:10px; line-height:1.6;">
+        Shruti Nilosey is a QA & Test Engineer focused on test automation and manual testing across web and mobile.
+        This portfolio showcases test projects and sample test artifacts aligned to tools listed on the CV.
+      </p>
     </section>
+
+    <div class="container spacer"></div>
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="container card" id="skills">
+      <h3>Technical Skills & Deployments</h3>
+      <div style="margin-top:10px;">
+        <span class="tag">Javascript</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Playwright</span>
+        <span class="tag">Selenium</span>
+        <span class="tag">TestProject</span>
+        <span class="tag">Cypress</span>
+        <span class="tag">CI / GitHub Actions</span>
+      </div>
+    </section>
+
+    <div class="container spacer"></div>
+
+    <!-- Footer links -->
+    <footer class="container" style="margin-bottom:160px">
+      <p style="color:#2b3440; font-weight:600;">Contact & Quick Links</p>
+      <div style="margin-top:6px;">
+        <a href="mailto:shruti.nilosey2812@gmail.com">Email</a> ·
+        <a href="https://www.linkedin.com/in/shrutinilosey94/" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="https://github.com/shrutinilosey-2812" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </footer>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <small>© <span id="ft-year"></span> Shruti Nilosey — QA Test Engineer</small>
+  <!-- Small modal / panel area for project details -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <div id="modal-content">
+        <!-- dynamic content inserted by scripts.js -->
+      </div>
     </div>
-  </footer>
+  </div>
 
-  <script src="css/scripts.js"></script>
-  <script>
-    document.getElementById('ft-year').innerText = new Date().getFullYear();
-  </script>
+  <!-- Command palette (bottom) -->
+  <div id="command-palette" aria-hidden="true">
+    <div class="palette-bar" role="region" aria-label="Command palette">
+      <div style="flex:1;">
+        <strong>Command palette</strong>
+        <div style="font-size:13px; color:#4b5563; margin-top:4px;">
+          Press <span class="palette-key">Ctrl/Cmd</span> + <span class="palette-key">K</span> to open / close.
+          Type: <em>projects</em>, <em>resume</em>, or <em>contact</em>.
+        </div>
+      </div>
+      <div>
+        <span class="palette-key">Ctrl/Cmd</span>
+        <span class="palette-key">K</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to JS: place this file at css/scripts.js -->
+  <script src="css/scripts.js" defer></script>
 </body>
 </html>
